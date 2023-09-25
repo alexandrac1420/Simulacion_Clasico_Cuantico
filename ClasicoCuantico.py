@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 def check_inputs_matrix(matrix):
-    n = matrix.shape[0]
+    n, m = matrix.shape
     for i in range(n):
         colum = matrix[:, i]
         if 1 in colum:
@@ -60,7 +60,7 @@ def simul_multi_slit(matrix, clicks, plot=True):
             for i in range (clicks):
                 final_state = lb.act_matrix_vec(matrix,final_state)
             if plot:
-                plot_and_save_probabilities(final_state)
+                plot_and_save_probabilities(final_state,"probabilistico")
 
             return final_state
         else:
@@ -75,7 +75,7 @@ def simul_multi_slit_imag(matrix, clicks, plot =True):
             for i in range (clicks):
                 final_state = lb.act_matrix_vec(matrix,final_state)
                 if plot:
-                    plot_and_save_probabilities(final_state)
+                    plot_and_save_probabilities(final_state,"cuantico")
             return final_state
         else:
             raise ValueError("Error: Cada salida debe sumar 1")
