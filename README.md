@@ -22,7 +22,7 @@ En caso de no tenerlo siga los siguientes pasos:
 Para instalar la librería debe tener en cuenta estos pasos:
 1. Abra la carpeta en donde desea guardar la librería.
 2. De click derecho y seleccione la opción "Git Bash"
-3. Clone el repositorio utilizando el comando 'https://github.com/alexandrac1420/Libreria_Vectores_Matrices_Complejas.git'
+3. Clone el repositorio utilizando el comando 'https://github.com/alexandrac1420/Simulacion_Clasico_Cuantico.git'
 4. Importe el modulo de la libreria en el programa que vaya a utilizar.
    
 Completado el proceso anterior podrá trabajar con la librería proporcionada.
